@@ -10,7 +10,7 @@ echo trim(fgets(STDIN));
 $count = trim(fgets(STDIN));
 
 for ($i = 0; $i < $count; $i++) {
-	echo "paiza\n";
+    echo "paiza\n";
 }
 
 /**
@@ -19,7 +19,7 @@ for ($i = 0; $i < $count; $i++) {
 $inputCount = trim(fgets(STDIN));
 
 for ($i = 0; $i < $inputCount; $i++) {
-	[$name, $age] = explode(" ", trim(fgets(STDIN)));
-	$age++;
-	echo "$name $age" . PHP_EOL;
+    [$name, $age] = explode(" ", trim(fgets(STDIN)));
+    $age++;
+    echo "$name $age" . PHP_EOL;
 }
