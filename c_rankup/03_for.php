@@ -1,5 +1,26 @@
 <?php
 /**
+ * step3
+ */
+$inputCount = trim(fgets(STDIN));
+
+$nums = [];
+for ($i = 0; $i < $inputCount; $i++) {
+	$nums[] = trim(fgets(STDIN));
+}
+
+$checkNum = trim(fgets(STDIN));
+
+$turn = 1;
+foreach ($nums as $num) {
+	if ($num === $checkNum) {
+		echo $turn;
+		break;
+	}
+	$turn++;
+}
+
+/**
  * step4
  * 
  * 【解説】
